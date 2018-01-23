@@ -15,9 +15,10 @@ using System.Threading.Tasks;
  *
  * @author     Ted Spence <ted.spence@avalara.com>
  * @author     Zhenya Frolov <zhenya.frolov@avalara.com>
+ * @author     Greg Hester <greg.hester@avalara.com>
  * @copyright  2004-2017 Avalara, Inc.
  * @license    https://www.apache.org/licenses/LICENSE-2.0
- * @version    18.1.0-158
+ * @version    18.1.1-159
  * @link       https://github.com/avadev/AvaTax-REST-V2-DotNet-SDK
  */
 
@@ -28,7 +29,7 @@ namespace Avalara.AvaTax.RestClient
         /// <summary>
         /// Returns the version number of the API used to generate this class
         /// </summary>
-        public static string API_VERSION { get { return "18.1.0-158"; } }
+        public static string API_VERSION { get { return "18.1.1-159"; } }
 
 #region Methods
 
@@ -366,8 +367,8 @@ namespace Avalara.AvaTax.RestClient
         /// Using CertExpress with this API will ensure that your certificates are automatically linked correctly into
         /// your company so that they can be used for tax exemptions.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that will record certificates</param>
         /// <param name="customerCode">The number of the customer where the request is sent to</param>
@@ -396,8 +397,8 @@ namespace Avalara.AvaTax.RestClient
         /// Using CertExpress with this API will ensure that your certificates are automatically linked correctly into
         /// your company so that they can be used for tax exemptions.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that issued this invitation</param>
         /// <param name="customerCode">The number of the customer where the request is sent to</param>
@@ -429,8 +430,8 @@ namespace Avalara.AvaTax.RestClient
         /// Using CertExpress with this API will ensure that your certificates are automatically linked correctly into
         /// your company so that they can be used for tax exemptions.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that issued this invitation</param>
         /// <param name="include">OPTIONAL: A comma separated list of special fetch options. 
@@ -472,8 +473,8 @@ namespace Avalara.AvaTax.RestClient
         /// * A link to the customer that is allowed to use this certificate
         /// * Your tax transaction must contain the correct customer code
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The ID number of the company recording this certificate</param>
         /// <param name="model">Certificates to be created</param>
@@ -498,8 +499,8 @@ namespace Avalara.AvaTax.RestClient
         /// 
         /// Revoked certificates can no longer be used.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -526,8 +527,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -561,8 +562,8 @@ namespace Avalara.AvaTax.RestClient
         /// * PoNumbers - Retrieves all PO numbers tied to the certificate.
         /// * Attributes - Retrieves all attributes applied to the certificate.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -595,8 +596,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -625,8 +626,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -654,8 +655,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -682,8 +683,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -716,8 +717,8 @@ namespace Avalara.AvaTax.RestClient
         /// * PoNumbers - Retrieves all PO numbers tied to the certificate.
         /// * Attributes - Retrieves all attributes applied to the certificate.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The ID number of the company to search</param>
         /// <param name="include">OPTIONAL: A comma separated list of special fetch options. You can specify one or more of the following:
@@ -756,8 +757,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -787,8 +788,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -813,8 +814,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -842,8 +843,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -1347,8 +1348,8 @@ namespace Avalara.AvaTax.RestClient
         /// identify any certificates linked to this `customer` object. If any certificate applies to the transaction,
         /// AvaTax will record the appropriate elements of the transaction as exempt and link it to the `certificate`.
         /// 
-        /// Please note that if this is your first call to the CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="model">The list of customer objects to be created</param>
@@ -1372,8 +1373,8 @@ namespace Avalara.AvaTax.RestClient
         /// identify any certificates linked to this `customer` object. If any certificate applies to the transaction,
         /// AvaTax will record the appropriate elements of the transaction as exempt and link it to the `certificate`.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="customerCode">The unique code representing this customer</param>
@@ -1402,8 +1403,8 @@ namespace Avalara.AvaTax.RestClient
         /// 
         /// * Certificates - Fetch a list of certificates linked to this customer.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="customerCode">The unique code representing this customer</param>
@@ -1430,8 +1431,8 @@ namespace Avalara.AvaTax.RestClient
         /// identify any certificates linked to this `customer` object. If any certificate applies to the transaction,
         /// AvaTax will record the appropriate elements of the transaction as exempt and link it to the `certificate`.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="customerCode">The unique code representing this customer</param>
@@ -1457,8 +1458,8 @@ namespace Avalara.AvaTax.RestClient
         /// identify any certificates linked to this `customer` object. If any certificate applies to the transaction,
         /// AvaTax will record the appropriate elements of the transaction as exempt and link it to the `certificate`.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="customerCode">The unique code representing this customer</param>
@@ -1500,8 +1501,8 @@ namespace Avalara.AvaTax.RestClient
         /// a CertExpress invitation link so that the customer can upload proof of their exemption certificate. Please
         /// see the `CreateCertExpressInvitation` API to create an invitation link for this customer.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="customerCode">The unique code representing this customer</param>
@@ -1534,8 +1535,8 @@ namespace Avalara.AvaTax.RestClient
         /// 
         /// * Certificates - Fetch a list of certificates linked to this customer.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="include">OPTIONAL - You can specify the value `certificates` to fetch information about certificates linked to the customer.</param>
@@ -1568,8 +1569,8 @@ namespace Avalara.AvaTax.RestClient
         /// identify any certificates linked to this `customer` object. If any certificate applies to the transaction,
         /// AvaTax will record the appropriate elements of the transaction as exempt and link it to the `certificate`.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="customerCode">The unique code representing this customer</param>
@@ -1595,8 +1596,8 @@ namespace Avalara.AvaTax.RestClient
         /// identify any certificates linked to this `customer` object. If any certificate applies to the transaction,
         /// AvaTax will record the appropriate elements of the transaction as exempt and link it to the `certificate`.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="customerCode">The unique code representing this customer</param>
@@ -1695,8 +1696,8 @@ namespace Avalara.AvaTax.RestClient
         /// A certificate may have multiple attributes that control its behavior. You may apply or remove attributes to a
         /// certificate at any time.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="filter">A filter statement to identify specific records to retrieve. For more information on filtering, see [Filtering in REST](http://developer.avalara.com/avatax/filtering-in-rest/) .</param>
         /// <param name="top">If nonzero, return no more than this number of results. Used with $skip to provide pagination for large datasets.</param>
@@ -1722,8 +1723,8 @@ namespace Avalara.AvaTax.RestClient
         /// An exemption reason defines why a certificate allows a customer to be exempt
         /// for purposes of tax calculation.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="filter">A filter statement to identify specific records to retrieve. For more information on filtering, see [Filtering in REST](http://developer.avalara.com/avatax/filtering-in-rest/) .</param>
         /// <param name="top">If nonzero, return no more than this number of results. Used with $skip to provide pagination for large datasets.</param>
@@ -1749,8 +1750,8 @@ namespace Avalara.AvaTax.RestClient
         /// An exposure zone is a location where a certificate can be valid. Exposure zones may indicate a taxing
         /// authority or other legal entity to which a certificate may apply.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="filter">A filter statement to identify specific records to retrieve. For more information on filtering, see [Filtering in REST](http://developer.avalara.com/avatax/filtering-in-rest/) .</param>
         /// <param name="top">If nonzero, return no more than this number of results. Used with $skip to provide pagination for large datasets.</param>
@@ -1868,8 +1869,8 @@ namespace Avalara.AvaTax.RestClient
         /// upload certificates. An invitation allows customers to use CertExpress to upload their exemption 
         /// certificates directly; this cover letter explains why the invitation was sent.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.
         /// </remarks>
         /// <param name="filter">A filter statement to identify specific records to retrieve. For more information on filtering, see [Filtering in REST](http://developer.avalara.com/avatax/filtering-in-rest/) .</param>
         /// <param name="top">If nonzero, return no more than this number of results. Used with $skip to provide pagination for large datasets.</param>
@@ -7917,8 +7918,8 @@ namespace Avalara.AvaTax.RestClient
         /// Using CertExpress with this API will ensure that your certificates are automatically linked correctly into
         /// your company so that they can be used for tax exemptions.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that will record certificates</param>
         /// <param name="customerCode">The number of the customer where the request is sent to</param>
@@ -7947,8 +7948,8 @@ namespace Avalara.AvaTax.RestClient
         /// Using CertExpress with this API will ensure that your certificates are automatically linked correctly into
         /// your company so that they can be used for tax exemptions.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that issued this invitation</param>
         /// <param name="customerCode">The number of the customer where the request is sent to</param>
@@ -7980,8 +7981,8 @@ namespace Avalara.AvaTax.RestClient
         /// Using CertExpress with this API will ensure that your certificates are automatically linked correctly into
         /// your company so that they can be used for tax exemptions.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that issued this invitation</param>
         /// <param name="include">OPTIONAL: A comma separated list of special fetch options. 
@@ -8023,8 +8024,8 @@ namespace Avalara.AvaTax.RestClient
         /// * A link to the customer that is allowed to use this certificate
         /// * Your tax transaction must contain the correct customer code
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The ID number of the company recording this certificate</param>
         /// <param name="model">Certificates to be created</param>
@@ -8049,8 +8050,8 @@ namespace Avalara.AvaTax.RestClient
         /// 
         /// Revoked certificates can no longer be used.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -8077,8 +8078,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -8112,8 +8113,8 @@ namespace Avalara.AvaTax.RestClient
         /// * PoNumbers - Retrieves all PO numbers tied to the certificate.
         /// * Attributes - Retrieves all attributes applied to the certificate.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -8146,8 +8147,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -8176,8 +8177,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -8205,8 +8206,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -8233,8 +8234,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -8267,8 +8268,8 @@ namespace Avalara.AvaTax.RestClient
         /// * PoNumbers - Retrieves all PO numbers tied to the certificate.
         /// * Attributes - Retrieves all attributes applied to the certificate.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The ID number of the company to search</param>
         /// <param name="include">OPTIONAL: A comma separated list of special fetch options. You can specify one or more of the following:
@@ -8307,8 +8308,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -8338,8 +8339,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -8364,8 +8365,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -8393,8 +8394,8 @@ namespace Avalara.AvaTax.RestClient
         /// criteria you specify when you store the certificate. To view or manage your certificates directly, please 
         /// log onto the administrative website for the product you purchased.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this certificate</param>
         /// <param name="id">The unique ID number of this certificate</param>
@@ -8898,8 +8899,8 @@ namespace Avalara.AvaTax.RestClient
         /// identify any certificates linked to this `customer` object. If any certificate applies to the transaction,
         /// AvaTax will record the appropriate elements of the transaction as exempt and link it to the `certificate`.
         /// 
-        /// Please note that if this is your first call to the CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="model">The list of customer objects to be created</param>
@@ -8923,8 +8924,8 @@ namespace Avalara.AvaTax.RestClient
         /// identify any certificates linked to this `customer` object. If any certificate applies to the transaction,
         /// AvaTax will record the appropriate elements of the transaction as exempt and link it to the `certificate`.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="customerCode">The unique code representing this customer</param>
@@ -8953,8 +8954,8 @@ namespace Avalara.AvaTax.RestClient
         /// 
         /// * Certificates - Fetch a list of certificates linked to this customer.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="customerCode">The unique code representing this customer</param>
@@ -8981,8 +8982,8 @@ namespace Avalara.AvaTax.RestClient
         /// identify any certificates linked to this `customer` object. If any certificate applies to the transaction,
         /// AvaTax will record the appropriate elements of the transaction as exempt and link it to the `certificate`.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="customerCode">The unique code representing this customer</param>
@@ -9008,8 +9009,8 @@ namespace Avalara.AvaTax.RestClient
         /// identify any certificates linked to this `customer` object. If any certificate applies to the transaction,
         /// AvaTax will record the appropriate elements of the transaction as exempt and link it to the `certificate`.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="customerCode">The unique code representing this customer</param>
@@ -9051,8 +9052,8 @@ namespace Avalara.AvaTax.RestClient
         /// a CertExpress invitation link so that the customer can upload proof of their exemption certificate. Please
         /// see the `CreateCertExpressInvitation` API to create an invitation link for this customer.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="customerCode">The unique code representing this customer</param>
@@ -9085,8 +9086,8 @@ namespace Avalara.AvaTax.RestClient
         /// 
         /// * Certificates - Fetch a list of certificates linked to this customer.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="include">OPTIONAL - You can specify the value `certificates` to fetch information about certificates linked to the customer.</param>
@@ -9119,8 +9120,8 @@ namespace Avalara.AvaTax.RestClient
         /// identify any certificates linked to this `customer` object. If any certificate applies to the transaction,
         /// AvaTax will record the appropriate elements of the transaction as exempt and link it to the `certificate`.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="customerCode">The unique code representing this customer</param>
@@ -9146,8 +9147,8 @@ namespace Avalara.AvaTax.RestClient
         /// identify any certificates linked to this `customer` object. If any certificate applies to the transaction,
         /// AvaTax will record the appropriate elements of the transaction as exempt and link it to the `certificate`.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="companyId">The unique ID number of the company that recorded this customer</param>
         /// <param name="customerCode">The unique code representing this customer</param>
@@ -9246,8 +9247,8 @@ namespace Avalara.AvaTax.RestClient
         /// A certificate may have multiple attributes that control its behavior. You may apply or remove attributes to a
         /// certificate at any time.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="filter">A filter statement to identify specific records to retrieve. For more information on filtering, see [Filtering in REST](http://developer.avalara.com/avatax/filtering-in-rest/) .</param>
         /// <param name="top">If nonzero, return no more than this number of results. Used with $skip to provide pagination for large datasets.</param>
@@ -9273,8 +9274,8 @@ namespace Avalara.AvaTax.RestClient
         /// An exemption reason defines why a certificate allows a customer to be exempt
         /// for purposes of tax calculation.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="filter">A filter statement to identify specific records to retrieve. For more information on filtering, see [Filtering in REST](http://developer.avalara.com/avatax/filtering-in-rest/) .</param>
         /// <param name="top">If nonzero, return no more than this number of results. Used with $skip to provide pagination for large datasets.</param>
@@ -9300,8 +9301,8 @@ namespace Avalara.AvaTax.RestClient
         /// An exposure zone is a location where a certificate can be valid. Exposure zones may indicate a taxing
         /// authority or other legal entity to which a certificate may apply.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="filter">A filter statement to identify specific records to retrieve. For more information on filtering, see [Filtering in REST](http://developer.avalara.com/avatax/filtering-in-rest/) .</param>
         /// <param name="top">If nonzero, return no more than this number of results. Used with $skip to provide pagination for large datasets.</param>
@@ -9419,8 +9420,8 @@ namespace Avalara.AvaTax.RestClient
         /// upload certificates. An invitation allows customers to use CertExpress to upload their exemption 
         /// certificates directly; this cover letter explains why the invitation was sent.
         /// 
-        /// Please note that if this is your first call to CertCapture endpoints, you may experience upto 3 minute delay because your
-        /// account needs to be provisioned at CertCapture side. Sorry for the inconvenience and thanks for your patience.;
+        /// You may experience up to a three minute delay on your very first call to the exemption related endpoints 
+        /// (as your account gets provisioned). Thank you for your patience.;
         /// </remarks>
         /// <param name="filter">A filter statement to identify specific records to retrieve. For more information on filtering, see [Filtering in REST](http://developer.avalara.com/avatax/filtering-in-rest/) .</param>
         /// <param name="top">If nonzero, return no more than this number of results. Used with $skip to provide pagination for large datasets.</param>
