@@ -18,29 +18,25 @@ using Newtonsoft.Json;
 namespace Avalara.AvaTax.RestClient
 {
     /// <summary>
-    /// Tax Authority Model
+    /// Contains information about a company's exemption certificate status.
+    /// 
+    /// This model can be used to determine if your company is able to use the Customers, Certificates, and
+    /// CertExpressInvites APIs within AvaTax.
     /// </summary>
-    public class TaxAuthorityModel
+    public class ProvisionStatusModel
     {
         /// <summary>
-        /// The unique ID number of this tax authority.
+        /// The status of exemption certificate setup for this company.
+        /// 
+        /// If this value is `Finished`, this company will then be able to use the Customers, Certificates, and
+        /// CertExpressInvites APIs within AvaTax.
         /// </summary>
-        public Int32 id { get; set; }
+        public CertCaptureProvisionStatus? status { get; set; }
 
         /// <summary>
-        /// The friendly name of this tax authority.
+        /// The accountId of the company represented by this status
         /// </summary>
-        public String name { get; set; }
-
-        /// <summary>
-        /// The type of this tax authority.
-        /// </summary>
-        public Int32? taxAuthorityTypeId { get; set; }
-
-        /// <summary>
-        /// The unique ID number of the jurisdiction for this tax authority.
-        /// </summary>
-        public Int32? jurisdictionId { get; set; }
+        public Int32? accountId { get; set; }
 
 
         /// <summary>

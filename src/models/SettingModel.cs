@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 /*
  * AvaTax API Client Library
  *
- * (c) 2004-2017 Avalara, Inc.
+ * (c) 2004-2018 Avalara, Inc.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -33,7 +33,7 @@ namespace Avalara.AvaTax.RestClient
         /// <summary>
         /// The unique ID number of the company this setting refers to.
         /// </summary>
-        public Int32 companyId { get; set; }
+        public Int32? companyId { get; set; }
 
         /// <summary>
         /// A user-defined "set" containing this name-value pair.

@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 /*
  * AvaTax API Client Library
  *
- * (c) 2004-2017 Avalara, Inc.
+ * (c) 2004-2018 Avalara, Inc.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -37,6 +37,8 @@ namespace Avalara.AvaTax.RestClient
         /// 
         /// This code should be used in the `customerCode` field of any call that creates or adjusts a transaction
         /// in order to ensure that all exemptions that apply to this customer are correctly considered.
+        /// 
+        /// Note: This field is case sensitive.
         /// </summary>
         public String customerCode { get; set; }
 

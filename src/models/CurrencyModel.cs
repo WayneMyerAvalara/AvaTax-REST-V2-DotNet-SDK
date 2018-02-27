@@ -18,29 +18,24 @@ using Newtonsoft.Json;
 namespace Avalara.AvaTax.RestClient
 {
     /// <summary>
-    /// Tax Authority Model
+    /// Represents an ISO 4217 currency code used for designating the currency of a transaction.
     /// </summary>
-    public class TaxAuthorityModel
+    public class CurrencyModel
     {
         /// <summary>
-        /// The unique ID number of this tax authority.
+        /// The ISO 4217 currency code for this currency.
         /// </summary>
-        public Int32 id { get; set; }
+        public String code { get; set; }
 
         /// <summary>
-        /// The friendly name of this tax authority.
+        /// A friendly human-readable name representing this currency.
         /// </summary>
-        public String name { get; set; }
+        public String description { get; set; }
 
         /// <summary>
-        /// The type of this tax authority.
+        /// The number of decimal digits to use when formatting a currency value for display.
         /// </summary>
-        public Int32? taxAuthorityTypeId { get; set; }
-
-        /// <summary>
-        /// The unique ID number of the jurisdiction for this tax authority.
-        /// </summary>
-        public Int32? jurisdictionId { get; set; }
+        public Byte? decimalDigits { get; set; }
 
 
         /// <summary>

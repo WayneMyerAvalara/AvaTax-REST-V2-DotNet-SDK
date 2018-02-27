@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 /*
  * AvaTax API Client Library
  *
- * (c) 2004-2017 Avalara, Inc.
+ * (c) 2004-2018 Avalara, Inc.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -259,6 +259,16 @@ namespace Avalara.AvaTax.RestClient
         /// Indicates the cost of insurance and freight for this line.
         /// </summary>
         public Decimal? costInsuranceFreight { get; set; }
+
+        /// <summary>
+        /// Indicates the VAT code for this line item.
+        /// </summary>
+        public String vatCode { get; set; }
+
+        /// <summary>
+        /// Indicates the VAT number type for this line item.
+        /// </summary>
+        public Int32? vatNumberTypeId { get; set; }
 
 
         /// <summary>

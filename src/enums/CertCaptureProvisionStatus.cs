@@ -16,29 +16,31 @@ using System;
 namespace Avalara.AvaTax.RestClient
 {
     /// <summary>
-    /// Refund types
+    /// 
     /// </summary>
-    public enum RefundType
+    public enum CertCaptureProvisionStatus
     {
         /// <summary>
-        /// Refund the whole transaction.
+        /// Account and company are provisioned
         /// </summary>
-        Full,
+        Finished,
 
         /// <summary>
-        /// Refund only specific lines from the original a transaction.
+        /// Account are not provisioned
         /// </summary>
-        Partial,
+        NotStarted,
 
         /// <summary>
-        /// Only refund the tax part of the transaction.
+        /// Provision job is being queued
+        ///  This could also be an indication that some companies under an account has been provisioned, while others
+        ///  under the same account has not.
         /// </summary>
-        TaxOnly,
+        InProgress,
 
         /// <summary>
-        /// Refund a percentage of the value of this transaction.
+        /// The account is put into provisioned queue.
         /// </summary>
-        Percentage,
+        Queued,
 
     }
 }
